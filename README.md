@@ -18,4 +18,5 @@ build-deps:        Setup build
 deps:              Install dependencies
 devel-deps:        Setup development
 help:              Show help
-lint:              Lin```
+lint:              Lin
+```
