@@ -7,9 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/aws-lambda-go/lambda"
-
 	"github.com/PuerkitoBio/goquery"
+	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/mackerelio/mackerel-client-go"
 )
 
