@@ -2,12 +2,20 @@
 金とプラチナの価格をスクレイピングしてMackerelのカスタムメトリクスとして可視化する
 
 ■ デプロイ
-```
-- Goコンパイル
-  - $ make build
 
-- ServerlessFrameworkでデプロイ
-  - $ sls deploy --aws-profile <PROFILE> --mkrkey <MACKEREL_API_KEY>
+- Mackerelにサービスを登録する
+```bash
+export MKRKEY=XXX
+
+curl -X POST https://api.mackerelio.com/api/v0/services \
+    -H "X-Api-Key: ${MKRKEY}" \
+    -H "Content-Type: application/json" \
+    -d '{"name": "Metal", "memo": "metal"}'
+```
+
+```bash
+make build
+sls deploy --aws-profile <PROFILE> --mkrkey ${MKRKEY}
 ```
 
 
