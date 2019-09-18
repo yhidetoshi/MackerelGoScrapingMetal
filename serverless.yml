@@ -19,7 +19,7 @@ functions:
       TZ: Asia/Tokyo
       MKRKEY: ${opt:mkrkey}
     events:
-      - schedule: cron(30 1 * * ? *)
+      - schedule: rate(1 hour)
 
 
 resources:
