@@ -1,6 +1,8 @@
 # MackerelGoScrapingMetal
 金とプラチナの価格をスクレイピングしてMackerelのカスタムメトリクスとして可視化する
 
+Blog: https://yhidetoshi.hatenablog.com/entry/2019/09/19/184936
+
 ■ デプロイ
 
 - Mackerelにサービスを登録する
